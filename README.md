@@ -55,7 +55,7 @@ func main() {
 	}
 }
 ```
-<b>See <a href="https://github.com/flaxtonio/faws/blob/master/tests/awsTest.go" target="_blank"><code>tests/awsTest.go</code></a> file for more detailed example</b>
+<b>Read <a href="https://github.com/flaxtonio/faws/blob/master/tests/awsTest.go" target="_blank"><code>tests/awsTest.go</code></a> file for more detailed example</b>
 
 # API Functions
 <ul>
