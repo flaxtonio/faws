@@ -1,6 +1,6 @@
 # Flaxton Amazon Web Services(AWS) API
 <p>
-This repository is an implementation of AWS API which is used for <a href="http://flaxton.io">flaxton.io</a> Load Balancer writtent in Go programming language <a href="http://golang.org">golang.org</a>. <i>Some part of code implemented using <a href="https://gopkg.in/amz.v1">gopkg.in/amz.v1</a> libraray</i>
+This repository is an implementation of AWS API which is used for <a href="http://flaxton.io">flaxton.io</a> Load Balancer written in Go programming language <a href="http://golang.org">golang.org</a>. <i>Some part of the code is implemented using <a href="https://gopkg.in/amz.v1">gopkg.in/amz.v1</a> libraray.</i>
 </p>
 
 # Get Started
@@ -12,14 +12,14 @@ To Get Started you need to follow this few steps.
 </b>
 <ol>
 <li>
-Create AWS API key and secret by following Amazon documentation: <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html">AWS Credentials</a>
+Create AWS API key and secret by following Amazon documentation: <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html">AWS Credentials</a>.
 </li>
 <li>
 Put this library in your project path (GOPATH) using
-<code>git clone https://github.com/flaxtonio/faws.git</code>
+<code>git clone https://github.com/flaxtonio/faws.git</code>.
 </li>
 <li>
-Import this library to you Go language project file 
+Import this library to your Go language project file. 
 <pre>
 import (
     .
@@ -63,8 +63,8 @@ func main() {
 <li><code>faws.GetRegions()</code> returns AWS available regions as an object</li>
 <li><code>(amz *Amazon) GetInstances(ids []string, filter string)</code> returns all information about specified instances. If <code>ids</code> is <code>nil</code> function returns all available instances</li>
 <li><code>(amz *Amazon) GetImages(ids []string, filter string)</code> returns all information about specified AMI Images. If <code>ids</code> is <code>nil</code> function returns all available AMI Images</li>
-<li><code>(amz *Amazon) CreateInstance(options ec2.RunInstances)</code> Cerates an AWS EC2 instance using specified options from ec2.RunInstances structure</li>
+<li><code>(amz *Amazon) CreateInstance(options ec2.RunInstances)</code> Creates an AWS EC2 instance using specified options from ec2.RunInstances structure</li>
 <li><code>(amz *Amazon) DeleteInstance(id string)</code> Deletes Instance from AWS account by Termination EC2 instance</li>
 <li><code>(amz *Amazon) StartInstance(id string)</code> Starts EC2 instance with specified ID</li>
-<li><code>(amz *Amazon) StopInstance(id string)</code> Sending Stop command for EC2 instance</li>
+<li><code>(amz *Amazon) StopInstance(id string)</code> Sends Stop command for EC2 instance</li>
 </ul>
